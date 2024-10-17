@@ -13,11 +13,21 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img id="careerImage" class="img-fluid" src="static/career.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Hello There you'll Learn about career openings here. </h1>
-      <img id="careerImage" class="img-fluid" src="static/career.jpg">
+      
       <h2 class="text-center mt-2 mb-4">About Ps careers</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, recusandae quisquam assumenda corrupti repellendus accusantium natus totam, cum consectetur eum possimus modi! Nesciunt voluptas dolorum culpa rerum. Sit, saepe temporibus facilis aliquid iusto voluptatem omnis hic, atque minima nemo corporis repudiandae sed aperiam impedit nulla cumque ea dicta accusamus. Iure?</p>
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-md-6">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, recusandae quisquam assumenda corrupti repellendus accusantium natus totam, cum consectetur eum possimus modi! Nesciunt voluptas dolorum culpa rerum. Sit, saepe temporibus facilis aliquid iusto voluptatem omnis hic, atque minima nemo corporis repudiandae sed aperiam impedit nulla cumque ea dicta accusamus. Iure?</p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <img src="/static/people.jpg" class="img-fluid" style="height:320px; border-radius:4px;">
+        </div>
+        
+      </div>
     
   
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
@@ -27,11 +37,11 @@
         {% endfor %}
       </div>
       <div style="text-align:center;">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <a class="btn btn-primary btn-lg" href="mailto:contact@fresher.ps?subject=Questions%20about%20the%20job%20openings&body=My%20Name%20%3A%20%3CEnter%20your%20name%20here%3E%0D%0A%0D%0AType%20the%20question....%0D%0A%0D%0A%0D%0A%0D%0A">Contact Us</a>
       </div>
-      <p>Copyright &copy; 2024, Ps Careers</p>
 
     </div>
+    {% include 'footer.html' %}
   </body>
   
 </html>
